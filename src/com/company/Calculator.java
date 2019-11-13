@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 class Calculator {
 
-    static BigDecimal calculate(String operation, ArrayList<BigDecimal> values) {
+    static BigDecimal calculate(String operation, ArrayList<BigDecimal> values) { // Возвращает результат вычислений в зависимости от операции
 
         BigDecimal result;
 
@@ -30,7 +30,7 @@ class Calculator {
         return result;
     }
 
-    private static BigDecimal add(ArrayList<BigDecimal> values) {
+    private static BigDecimal add(ArrayList<BigDecimal> values) { // Сложение
         BigDecimal result = new BigDecimal(0);
 
         for (BigDecimal value : values) {
@@ -40,7 +40,7 @@ class Calculator {
         return result;
     }
 
-    private static BigDecimal multiply(ArrayList<BigDecimal> values) {
+    private static BigDecimal multiply(ArrayList<BigDecimal> values) { // Умножение
         BigDecimal result = new BigDecimal(1);
 
         for (BigDecimal value : values) {
@@ -50,7 +50,7 @@ class Calculator {
         return result;
     }
 
-    private static BigDecimal multiplyAndSum(ArrayList<BigDecimal> values) {
+    private static BigDecimal multiplyAndSum(ArrayList<BigDecimal> values) { // Умножение 2-ух и сложение с 3-им
         BigDecimal result;
 
         if (values.size() >= 3) {
